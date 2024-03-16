@@ -13,3 +13,5 @@
 /Search.Infrastructure/obj
 /Search.Test/bin/Debug/net6.0
 /Search.Test/obj
+/.vs/SearchApplication/DesignTimeBuild
+/.vs/SearchApplication/FileContentIndex
