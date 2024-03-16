@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/SearchApplication/FileContentIndex/bb3297f7-2d05-4fa0-9df2-4f4dc2328e3e.vsidx
+/Search.API/bin/Debug/net6.0
+/Search.API/obj
+/Search.Application/bin/Debug/net6.0
+/Search.Domain/bin/Debug/net6.0
+/Search.Domain/obj
+/Search.Application/obj
+/Search.Infrastructure/bin/Debug/net6.0
+/Search.Infrastructure/obj
+/Search.Test/bin/Debug/net6.0
+/Search.Test/obj

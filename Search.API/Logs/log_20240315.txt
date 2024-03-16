@@ -1,0 +1,61 @@
+{
+  "bookingDetails": "Hello"
+}
+{
+  "bookingDetails": "Hello"
+}
+{
+  "bookingDetails": "Hello"
+}
+
+
+
+{
+  "bookingDetails": "Hello"
+}
+
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": "hi"
+}
+Response : 0
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":0,"flightId":0,"userId":0,"bookingDate":"0001-01-01T00:00:00","status":"","bookingDetails":"hi"}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":0,"flightId":0,"userId":0,"bookingDate":"0001-01-01T00:00:00","status":"","bookingDetails":"hi"}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : []
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : []
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-145832259802e460ab84e91d1c7febeb-2f65efd08c2fb42d-00"}
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-62d31488b7d40eb4ce9057cd7f735d86-d961e435567afe4b-00"}
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-d8f91b08b608599f6b11b7a4828ed677-c7ab569aa0072ec1-00"}
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-912da3eab7036932cee82dc3a3e5e946-d32750c110088d78-00"}
+Request: GET, Path: /api/v1.0/token
+Request Body: 
