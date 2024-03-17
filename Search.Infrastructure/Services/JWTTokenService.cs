@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Search.Infrastructure.Services
 {
-    public class JWTTokenService
+    public class JWTTokenService : IJWTTokenService
     {
         private readonly string _secretKey;
         private readonly string _issuer;
@@ -18,6 +18,12 @@ namespace Search.Infrastructure.Services
             _expiryInMinutes = expiryInMinutes;
         }
 
+        /// <summary>
+        /// Generates Token
+        /// </summary>
+        /// <param name="userId"> user id</param>
+        /// <param name="role">role </param>
+        /// <returns></returns>
         public string GenerateToken(string userId, string role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -39,6 +45,11 @@ namespace Search.Infrastructure.Services
             return tokenHandler.WriteToken(token);
         }
 
+        /// <summary>
+        /// Gets principal from token 
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public ClaimsPrincipal GetPrincipalFromToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

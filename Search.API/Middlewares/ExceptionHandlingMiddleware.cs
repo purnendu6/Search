@@ -1,6 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Search.Application.Enums;
 using Search.Domain.Dto;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace Search.API.Middlewares
 {
@@ -49,24 +54,9 @@ namespace Search.API.Middlewares
             }
             switch (exception)
             {
-                case FileNotFoundException ex:
-                    statusCode = StatusCodes.Status404NotFound;
-                    errorDetails.ErrorCode = ErrorCode.FileNotFoundException.ToString(); ;
-                    errorDetails.ErrorDescription = $"Type: {type}, Message: {ex.Message}, StackTrace: {ex.StackTrace}.\n InnerException : {innerException}";
-                    break;
-                case ArgumentNullException ex:
-                    statusCode = StatusCodes.Status404NotFound;
-                    errorDetails.ErrorCode = ErrorCode.FileNotFoundException.ToString(); ;
-                    errorDetails.ErrorDescription = $"Type: {type}, Message: {ex.Message}, StackTrace: {ex.StackTrace}.\n InnerException : {innerException}";
-                    break;
-                case DivideByZeroException ex:
-                    statusCode = StatusCodes.Status400BadRequest;
-                    errorDetails.ErrorCode = ErrorCode.SystemError.ToString(); ;
-                    errorDetails.ErrorDescription = $"Type: {type}, Message: {ex.Message}, StackTrace: {ex.StackTrace}.\n InnerException : {innerException}";
-                    break;
                 case UnauthorizedAccessException ex:
                     statusCode = StatusCodes.Status401Unauthorized;
-                    errorDetails.ErrorCode = ErrorCode.Unauthorized.ToString(); ;
+                    errorDetails.ErrorCode = ErrorCode.Unauthorized.ToString();
                     errorDetails.ErrorDescription = $"Type: {type}, Message: {ex.Message}, StackTrace: {ex.StackTrace}.\n InnerException : {innerException}";
                     break;
                 default:

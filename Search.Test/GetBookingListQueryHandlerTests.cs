@@ -24,8 +24,8 @@ namespace Search.Test
             // Arrange
             var bookingList = new List<Booking>()
             {
-                new Booking() {BookingDetails = "test1"},
-                new Booking() {BookingDetails = "test2"}
+                new Booking() { FlightId = 1, BookingId = 1, BookingDate = DateTime.UtcNow, UserId = 1, SeatNo = "1A", Status = "Booked"},
+                new Booking() { FlightId = 2, BookingId = 2, BookingDate = DateTime.UtcNow, UserId = 2, SeatNo = "1B", Status = "Booked"}
             };
             _repositoryMock.Setup(x => x.GetAll()).ReturnsAsync(bookingList);
             var query = new GetBookingListQuery();

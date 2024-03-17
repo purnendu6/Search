@@ -1,0 +1,1025 @@
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-cc5d9f5ed9be5fe99682d4e1f2e9e0d0-bf95b2f24f33c961-00"}
+Request: GET, Path: /api/v1.0/token
+Request Body: 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-a90e98088c042cd5cb7b22893af97b31-91022630011b4ec9-00"}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NTAxNzQsImV4cCI6MTcxMDY1Mzc3MywiaWF0IjoxNzEwNjUwMTc0LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.zQ8Exj3IbFvggAVr0B3c3aA8piXlN2ejXRExA3v9lfQ
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NTA2MzYsImV4cCI6MTcxMDY1NDIzNiwiaWF0IjoxNzEwNjUwNjM2LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.oLbA3zs166f8derpJH9dAU4jfUx0JHVGlvFuaBZPny8
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingId": 1,
+  "flightId": 1,
+  "userId": 0,
+  "bookingDate": "2024-03-17T04:44:33.721Z",
+  "seatNo": "as",
+  "status": "asde"
+}
+Response : {"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T04:44:33.721Z","seatNo":"as","status":"asde","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T04:44:33.721Z","seatNo":"as","status":"asde","user":null,"flight":null}]
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "Purnendu",
+  "lastName": "Pal",
+  "email": "ppal@gmail.com",
+  "userName": "ppal",
+  "password": "pintu@123",
+  "isActive": true
+}
+Response : 1
+Request: GET, Path: /api/v1.0/user/users
+Request Body: 
+Response : [{"userId":1,"firstName":"Purnendu","lastName":"Pal","email":"ppal@gmail.com","userName":"ppal","password":"$2b$10$K7puoT5KepJFYTfogxfWjuNJrzP7AjsUTob47LIudUZkVzA1.y1Ka","isActive":true}]
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T06:53:41.577Z",
+  "seatNo": "AV",
+  "status": "SAS"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T06:53:41.577Z","seatNo":"AV","status":"SAS","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-79057c25e32702b2c0beb00ffd8aaf8d-b2a99fda6e2f32cd-00"}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":1}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:02:04.401Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:02:04.401Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T08:02:04.401Z",
+  "seatNo": "1B",
+  "status": "Confimed"
+}
+Response : {"bookingId":2,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:02:04.401Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:02:04.401Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":1}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:02:04.401Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":1}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:20:29.651Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:20:29.651Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T08:20:29.651Z",
+  "seatNo": "2A",
+  "status": "Confimed"
+}
+Response : {"bookingId":2,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:20:29.651Z","seatNo":"2A","status":"Confimed","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:20:29.651Z","seatNo":"2A","status":"Confimed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":1}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:29:18.002Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:29:18.002Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:29:18.002Z",
+  "seatNo": "2A",
+  "status": "Confimed"
+}
+Response : {"bookingId":2,"flightId":2,"userId":1,"bookingDate":"2024-03-17T08:29:18.002Z","seatNo":"2A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:29:18.002Z",
+  "seatNo": "1B",
+  "status": "Confimed"
+}
+Response : {"bookingId":3,"flightId":2,"userId":1,"bookingDate":"2024-03-17T08:29:18.002Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:29:18.002Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":4,"flightId":2,"userId":1,"bookingDate":"2024-03-17T08:29:18.002Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:33:59.397Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:33:59.397Z",
+  "seatNo": "1B",
+  "status": "Confimed"
+}
+Response : {"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:33:59.397Z",
+  "seatNo": "1C",
+  "status": "Confimed"
+}
+Response : {"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1C","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:33:59.397Z",
+  "seatNo": "1C",
+  "status": "Cancelled"
+}
+Response : {"bookingId":4,"flightId":2,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1C","status":"Cancelled","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:33:59.397Z",
+  "seatNo": "1A",
+  "status": "Cancelled"
+}
+Response : {"bookingId":5,"flightId":2,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1A","status":"Cancelled","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1C","status":"Confimed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":1}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1C","status":"Confimed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1B","status":"Confimed"},{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:33:59.397Z","seatNo":"1A","status":"Confimed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:39:45.770Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:39:45.770Z",
+  "seatNo": "1B",
+  "status": "Confimed"
+}
+Response : {"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1B","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:39:45.770Z",
+  "seatNo": "1C",
+  "status": "Confimed"
+}
+Response : {"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1C","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T08:39:45.770Z",
+  "seatNo": "1D",
+  "status": "Cancelled"
+}
+Response : {"bookingId":4,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1D","status":"Cancelled","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T08:39:45.770Z",
+  "seatNo": "1E",
+  "status": "Cancelled"
+}
+Response : {"bookingId":5,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1E","status":"Cancelled","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1C","status":"Confimed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1B","status":"Confimed"},{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1A","status":"Confimed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1A","status":"Confimed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1B","status":"Confimed"},{"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1C","status":"Confimed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":false},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : {"type":"https://tools.ietf.org/html/rfc7235#section-3.1","title":"Unauthorized","status":401,"traceId":"00-de51586637ca8bdfca9b5b1bfa90fa1f-ca771958e139826b-00"}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxIiwibmJmIjoxNzEwNjY1MzgyLCJleHAiOjE3MTA2Njg5ODIsImlhdCI6MTcxMDY2NTM4MiwiaXNzIjoiVmFsaWRUZXN0SXNzdWVyIn0.BJAgQJ_YmDOe12WZ7tPt_9_JqzBDquPdLZJlol53lDc
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1A","status":"Confimed","user":null,"flight":null},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1B","status":"Confimed","user":null,"flight":null},{"bookingId":3,"flightId":1,"userId":1,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1C","status":"Confimed","user":null,"flight":null},{"bookingId":4,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1D","status":"Cancelled","user":null,"flight":null},{"bookingId":5,"flightId":2,"userId":2,"bookingDate":"2024-03-17T08:39:45.77Z","seatNo":"1E","status":"Cancelled","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : Please provide valid authentication token.
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:59:56.664Z",
+  "seatNo": "1A",
+  "status": "Scf"
+}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T08:59:56.664Z",
+  "seatNo": "1A",
+  "status": "Scf"
+}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T09:02:06.698Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"ErrorCode":"Unauthorized","ErrorDescription":"Type: System.UnauthorizedAccessException, Message: Please provide valid authentication token., StackTrace:    at Search.API.Controllers.BookingController.PostBooking(CreateBookingCommandRequest createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 75\r\n   at lambda_method5(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30.\n InnerException : "}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ0ZXN0dXNlciIsInJvbGUiOiJ0ZXN0QDEyMyIsIm5iZiI6MTcxMDY2ODI3NCwiZXhwIjoxNzEwNjcxODc0LCJpYXQiOjE3MTA2NjgyNzQsImlzcyI6IlZhbGlkVGVzdElzc3VlciJ9.Fpys0rCgsnIJTjWd9CAAbHOmLOMdzPb3SRt8TgbyJvE
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : Please provide valid authentication token.
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T09:51:11.686Z",
+  "seatNo": "1A",
+  "status": "Confimed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T09:51:11.686Z","seatNo":"1A","status":"Confimed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "Purnendu",
+  "lastName": "Pal",
+  "email": "ppal@gmail.com",
+  "userName": "test",
+  "password": "test@123",
+  "isActive": true
+}
+Response : 1
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "purnendu",
+  "lastName": "pal",
+  "email": "abc@gmail.com",
+  "userName": "qwe",
+  "password": "123",
+  "isActive": true
+}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "userName": "azx",
+  "password": "pam",
+  "isActive": true
+}
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: FluentValidation.ValidationException, Message: Validation failed!, StackTrace:    at Search.API.Controllers.UserController.CreateUser(CreateUserCommandRequest request) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\UserController.cs:line 39\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 31 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "userName": "azx",
+  "password": "pam",
+  "isActive": true
+}
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: FluentValidation.ValidationException, Message: Validation failed!, StackTrace:    at Search.API.Controllers.UserController.CreateUser(CreateUserCommandRequest request) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\UserController.cs:line 39\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 31 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "userName": "azx",
+  "password": "pam",
+  "isActive": true
+}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "userName": "acv",
+  "password": "ass",
+  "isActive": true
+}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "Purnendu",
+  "lastName": "pal",
+  "email": "anc@gmail.com",
+  "userName": "amksop",
+  "password": "pintu@123",
+  "isActive": true
+}
+Response : 1
+Request: GET, Path: /api/v1.0/user/users
+Request Body: 
+Response : [{"userId":1,"firstName":"Purnendu","lastName":"pal","email":"anc@gmail.com","userName":"amksop","password":"$2b$10$gZqJQMr89yqMF5cgBrbKEuKiqD2ZBJQTvM1Anb11SdV56NBh3zRQ6","isActive":true}]
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzM2ODgsImV4cCI6MTcxMDY3NzI4OCwiaWF0IjoxNzEwNjczNjg4LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.jUi-NIjLqm-B4LdldB4mNIbOTrUMWr1k8JL5EwtK-d8
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:08:32.370Z",
+  "seatNo": "1A",
+  "status": "Confirmed"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T11:08:32.37Z","seatNo":"1A","status":"Confirmed","user":null,"flight":null}
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "ancb",
+  "lastName": "sxskc",
+  "email": "abc@gmail.com",
+  "userName": "purnendu",
+  "password": "pintu@123",
+  "isActive": true
+}
+Response : 1
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzQwNzQsImV4cCI6MTcxMDY3NzY3NCwiaWF0IjoxNzEwNjc0MDc0LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.ErvifTAP-Wk40aS5VAaorEp5aOVe3Dvw1Mnta6Ply5s
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:14:14.169Z",
+  "seatNo": "1A",
+  "status": "Con"
+}
+Response : {"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T11:14:14.169Z","seatNo":"1A","status":"Con","user":null,"flight":null}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzUwMTMsImV4cCI6MTcxMDY3ODYxMywiaWF0IjoxNzEwNjc1MDEzLCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.zBgdD7gPcYlteAKMmneiGkz1W6Ebshb6DmQRW4Zn4vU
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:30:37.054Z",
+  "seatNo": "1A",
+  "status": "Confirmed"
+}
+Response : {"bookingId":0,"flightId":1,"userId":1,"bookingDate":"2024-03-17T11:30:37.054Z","seatNo":"1A","status":"Confirmed"}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzYwMDEsImV4cCI6MTcxMDY3OTYwMSwiaWF0IjoxNzEwNjc2MDAxLCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.9csWIlRlC-31EckyBzENnBZ2Pmlud1wFPEy1kGBznEU
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [{
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1D",
+  "status": "Confirmed"
+},
+{
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1S",
+  "status": "Confirmed"
+},
+{
+  "flightId": 3,
+  "userId": 3,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1a",
+  "status": "Confirmed"
+}]
+Response : {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6f2c7e8ac3b5bfd1082a7c69eb53fac5-cbabb406dd2fb28b-00","errors":{"$":["The JSON value could not be converted to Search.Application.Commands.CreateBookingCommandRequest. Path: $ | LineNumber: 0 | BytePositionInLine: 1."],"createBookingCommandRequest":["The createBookingCommandRequest field is required."]}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [{
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1D",
+  "status": "Confirmed"
+},
+{
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1S",
+  "status": "Confirmed"
+},
+{
+  "flightId": 3,
+  "userId": 3,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1a",
+  "status": "Confirmed"
+}]
+Response : {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-b3978203611647cf22f752a807cd47b9-b4c05c3ccac53113-00","errors":{"$":["The JSON value could not be converted to Search.Application.Commands.CreateBookingCommandRequest. Path: $ | LineNumber: 0 | BytePositionInLine: 1."],"createBookingCommandRequest":["The createBookingCommandRequest field is required."]}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {{
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1D",
+  "status": "Confirmed"
+},
+{
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1S",
+  "status": "Confirmed"
+},
+{
+  "flightId": 3,
+  "userId": 3,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1a",
+  "status": "Confirmed"
+}}
+Response : {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-56fcaed2a21b72723155344c2bb24877-b9d8e9a6aeb1779a-00","errors":{"$":["'{' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 0 | BytePositionInLine: 1."],"createBookingCommandRequest":["The createBookingCommandRequest field is required."]}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {{
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1D",
+  "status": "Confirmed"
+},
+{
+  "flightId": 2,
+  "userId": 2,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1S",
+  "status": "Confirmed"
+},
+{
+  "flightId": 3,
+  "userId": 3,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1a",
+  "status": "Confirmed"
+}}
+Response : {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-6f23d3e6c0c594cabda51e3cc14ac0d2-b4b675e70b844189-00","errors":{"$":["'{' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 0 | BytePositionInLine: 1."],"createBookingCommandRequest":["The createBookingCommandRequest field is required."]}}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "flightId": 1,
+  "userId": 1,
+  "bookingDate": "2024-03-17T11:46:56.545Z",
+  "seatNo": "1D",
+  "status": "Confirmed"
+}
+Response : [{"bookingId":0,"flightId":1,"userId":1,"bookingDate":"2024-03-17T11:46:56.545Z","seatNo":"1D","status":"Confirmed"}]
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzYzMDUsImV4cCI6MTcxMDY3OTkwNSwiaWF0IjoxNzEwNjc2MzA1LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.PyLIq6_-6AZC4t_FkH10-QTEmCxL4WmMvZVqqQlpVPE
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "flightId": 1,
+    "userId": 1,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1A",
+    "status": "Confirmed"
+  },
+  {
+    "flightId": 2,
+    "userId": 2,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1B",
+    "status": "Confirmed"
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "flightId": 1,
+    "userId": 1,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1A",
+    "status": "Confirmed"
+  },
+  {
+    "flightId": 2,
+    "userId": 2,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1B",
+    "status": "Confirmed"
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "flightId": 1,
+    "userId": 1,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1A",
+    "status": "Confirmed"
+  },
+  {
+    "flightId": 2,
+    "userId": 2,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1B",
+    "status": "Confirmed"
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "flightId": 1,
+    "userId": 1,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1A",
+    "status": "Confirmed"
+  },
+  {
+    "flightId": 2,
+    "userId": 2,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1B",
+    "status": "Confirmed"
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "flightId": 1,
+    "userId": 1,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1A",
+    "status": "Confirmed"
+  },
+  {
+    "flightId": 2,
+    "userId": 2,
+    "bookingDate": "2024-03-17T11:52:06.311Z",
+    "seatNo": "1B",
+    "status": "Confirmed"
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzcxNTksImV4cCI6MTcxMDY4MDc1OSwiaWF0IjoxNzEwNjc3MTU5LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.eEkyeDc-Mw09rlL8kZW4oO8uBJEtYGCDixEU8ekS6aA
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: [
+  {
+    "bookingDetails": [
+      {
+        "bookingId": 2,
+        "flightId": 2,
+        "userId": 2,
+        "bookingDate": "2024-03-17T12:06:17.768Z",
+        "seatNo": "1B",
+        "status": "Confirmed"
+      }
+    ]
+  },
+{
+    "bookingDetails": [
+      {
+        "bookingId": 1,
+        "flightId": 1,
+        "userId": 1,
+        "bookingDate": "2024-03-17T12:06:17.768Z",
+        "seatNo": "1A",
+        "status": "Confirmed"
+      }
+    ]
+  }
+]
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: List`1 does not implement IRequest (Parameter 'request'), StackTrace:    at MediatR.Mediator.<>c.<Send>b__9_0(Type requestType)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)\r\n   at MediatR.Mediator.Send(Object request, CancellationToken cancellationToken)\r\n   at Search.API.Controllers.BookingController.PostBooking(List`1 createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2Nzc3NzUsImV4cCI6MTcxMDY4MTM3NSwiaWF0IjoxNzEwNjc3Nzc1LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.Po7F6kVnqvrISzo2jfRhK0K76ZMXFpai6mX8OWpE4QQ
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : {"ErrorCode":"Unauthorized","ErrorDescription":"Type: System.UnauthorizedAccessException, Message: Please provide valid authentication token., StackTrace:    at Search.API.Controllers.BookingController.PostBooking(CreateBookingCommandRequest createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 74\r\n   at lambda_method13(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30.\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "bookingId": 1,
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : {"ErrorCode":"SystemError","ErrorDescription":"Type: System.ArgumentException, Message: An item with the same key has already been added. Key: 1, StackTrace:    at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)\r\n   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryTable`1.Create(IUpdateEntry entry)\r\n   at Microsoft.EntityFrameworkCore.InMemory.Storage.Internal.InMemoryStore.ExecuteTransaction(IList`1 entries, IDiagnosticsLogger`1 updateLogger)\r\n   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)\r\n   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)\r\n   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)\r\n   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)\r\n   at Search.Infrastructure.Repositories.InMemoryBookingRepository.Create(List`1 bookingDetails) in C:\\Search_Assignment\\Search\\Search.Infrastructure\\Repositories\\InMemoryBookingRepository.cs:line 32\r\n   at Search.Application.Handlers.CreateBookingCommandHandler.Handle(CreateBookingCommandRequest createBookingCommand, CancellationToken cancellationToken) in C:\\Search_Assignment\\Search\\Search.Application\\Handlers\\CreateBookingCommandHandler.cs:line 16\r\n   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Search.API.Controllers.BookingController.PostBooking(CreateBookingCommandRequest createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 78\r\n   at lambda_method5(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30 .\n InnerException : "}
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+     
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : 
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null},{"bookingId":2,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+   
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : {"ErrorCode":"Unauthorized","ErrorDescription":"Type: System.UnauthorizedAccessException, Message: Please provide valid authentication token., StackTrace:    at Search.API.Controllers.BookingController.PostBooking(CreateBookingCommandRequest createBookingCommandRequest) in C:\\Search_Assignment\\Search\\Search.API\\Controllers\\BookingController.cs:line 74\r\n   at lambda_method5(Closure , Object )\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\r\n   at Search.API.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\\Search_Assignment\\Search\\Search.API\\Middlewares\\ExceptionHandlingMiddleware.cs:line 30.\n InnerException : "}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2Nzg3NDMsImV4cCI6MTcxMDY4MjM0MywiaWF0IjoxNzEwNjc4NzQzLCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.JbcYxWDlcgwb7y5uGtEAM-xE6-W9-pA7fAwVbOQYA1E
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+   
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+   
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null},{"bookingId":2,"flightId":1,"userId":0,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2NzkxMzgsImV4cCI6MTcxMDY4MjczOCwiaWF0IjoxNzEwNjc5MTM4LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.nO0Joa16vBEAm5jjYm6wGd9JNFBGh0KwINA8PTRSEAY
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2Nzk1NjYsImV4cCI6MTcxMDY4MzE2NiwiaWF0IjoxNzEwNjc5NTY2LCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.Gu5lDcFi1Cz2EYSKm_yZEc2EX0BgJzNnMzaa-PGCAug
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed","user":null,"flight":null},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"},{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":false},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"},{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":false},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/token/create
+Request Body: 
+Response : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJwdXJuZW5kdSIsInJvbGUiOiJwaW50dUAxMjMiLCJuYmYiOjE3MTA2ODA0MTIsImV4cCI6MTcxMDY4NDAxMiwiaWF0IjoxNzEwNjgwNDEyLCJpc3MiOiJWYWxpZFRlc3RJc3N1ZXIifQ.Yafw6Dzsi-JbQ8MG-0ObLSOpvbp17JkyKn5AzVU_5t4
+Request: POST, Path: /api/v1.0/booking/create
+Request Body: {
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+Response : Data Inserted Successfully!
+Request: GET, Path: /api/v1.0/booking
+Request Body: 
+Response : [{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed","user":null,"flight":null},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed","user":null,"flight":null}]
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"},{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":true},"pagination":{"currentPage":1,"pageSize":10}}
+Request: GET, Path: /api/v1.0/booking/search
+Request Body: 
+Response : {"bookings":[{"bookingId":1,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1A","status":"Confirmed"},{"bookingId":2,"flightId":1,"userId":1,"bookingDate":"2024-03-17T12:16:34.521Z","seatNo":"1B","status":"Confirmed"}],"sortingOptions":{"sortBy":"seatno","sortDescending":false},"pagination":{"currentPage":1,"pageSize":10}}
+Request: POST, Path: /api/v1.0/flight/create
+Request Body: {
+  "flightNumber": "1",
+  "departureAirport": "ASC",
+  "arrivalAirport": "SDC",
+  "departureTime": "2024-03-17T13:01:31.421Z",
+  "arrivalTime": "2024-03-17T13:01:31.421Z",
+  "price": 12345
+}
+Response : {"flightId":1,"flightNumber":"1","departureAirport":"ASC","arrivalAirport":"SDC","departureTime":"2024-03-17T13:01:31.421Z","arrivalTime":"2024-03-17T13:01:31.421Z","price":12345}
+Request: GET, Path: /api/v1.0/flight/flights
+Request Body: 
+Response : [{"flightId":1,"flightNumber":"1","departureAirport":"ASC","arrivalAirport":"SDC","departureTime":"2024-03-17T13:01:31.421Z","arrivalTime":"2024-03-17T13:01:31.421Z","price":12345}]
+Request: POST, Path: /api/v1.0/user/create
+Request Body: {
+  "firstName": "Purnendu",
+  "lastName": "Pal",
+  "email": "abc@gmail.com",
+  "userName": "purnendu",
+  "password": "pintu@123",
+  "isActive": true
+}
+Response : 1
+Request: GET, Path: /api/v1.0/user/users
+Request Body: 
+Response : [{"userId":1,"firstName":"Purnendu","lastName":"Pal","email":"abc@gmail.com","userName":"purnendu","password":"$2b$10$VRBBNxXjlsh6uu2qVjlwwOBEWNJyDnesUPpkTzD8yC0gsjYyz56uu","isActive":true}]

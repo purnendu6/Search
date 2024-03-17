@@ -5,6 +5,6 @@ namespace Search.Domain.Interfaces
     public interface IUserRepository
     {
         Task<List<User>> GetAll();
-        Task<int> Create(User user);
+        Task<User> Create(User user);
     }
 }

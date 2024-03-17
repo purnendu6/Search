@@ -1,0 +1,89 @@
+﻿
+1> 
+Project Structure- Project developed using the Clean Architecture principles, CQRS, the Mediator Pattern(using MediatR library), InMemoryDatabase and FluentValidation.
+
+SearchApplication
+Core
+|-- Search.Domain 
+|-- Search.Application
+Infrastructure
+|-- Search.Infrastructure
+Presentation
+|-- Search.API
+Test
+|-- Search.Test
+
+2>
+Steps to use SearchApplication
+a> Generate JWT Token using username and password (SecurityToken --> "/api/v1.0/token/create")
+https://localhost:7014/api/v1.0/token/create?username=testuser&password=test%40123
+Response:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ0ZXN0dXNlciIsInJvbGUiOiJ0ZXN0QDEyMyIsIm5iZiI6MTcxMDY2ODI3NCwiZXhwIjoxNzEwNjcxODc0LCJpYXQiOjE3MTA2NjgyNzQsImlzcyI6IlZhbGlkVGVzdElzc3VlciJ9.Fpys0rCgsnIJTjWd9CAAbHOmLOMdzPb3SRt8TgbyJvE
+
+b> Call Create booking API using JWT token (Booking --> "/api/v1.0/booking/create")
+https://localhost:7014/api/v1.0/booking/create
+Request body:
+{
+  "bookingDetails": [
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1A",
+      "status": "Confirmed"
+    },
+    {
+      "flightId": 1,
+      "userId": 1,
+      "bookingDate": "2024-03-17T12:16:34.521Z",
+      "seatNo": "1B",
+      "status": "Confirmed"
+    }
+  ]
+}
+
+Response body:
+{
+    Data Inserted Successfully!
+}
+
+C> Call Search booking API using JWT token (Booking --> "/api/v1.0/booking/search")
+https://localhost:7014/api/v1.0/booking/search?Status=Can&SortingOptions.SortBy=seatno&SortingOptions.SortDescending=true&Pagination.CurrentPage=1&Pagination.PageSize=10
+Payload:
+Status: Confirmed, Cancelled etc.
+SortingOptions.SortBy: column name(seatno)
+SortingOptions.SortDescending: true/false
+Pagination.CurrentPage: 1,2 etc.
+Pagination.PageSize: 5,10 etc.
+	
+Response body:
+
+{
+  "bookings": [], --> Booking details
+  "sortingOptions": {
+    "sortBy": "seatno",
+    "sortDescending": true
+  },
+  "pagination": {
+    "currentPage": 1,
+    "pageSize": 10
+  }
+}
+
+d> Call Create user API using JWT token to check FluentValidation (User --> "/api/v1.0/user/create")
+https://localhost:7014/api/v1.0/user/create
+Request body:
+
+{
+  "firstName": "Purnendu",
+  "lastName": "Pal",
+  "email": "ppal@gmail.com",
+  "userName": "test",
+  "password": "test@123",
+  "isActive": true
+}
+
+Response body: 1 (Returns the UserId)
+
+Validation Details: If userName is less than 5 chaaracters and password is less than 6 characters, response will throw error.
+

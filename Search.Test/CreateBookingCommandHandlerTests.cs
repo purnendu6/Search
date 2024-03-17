@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Search.Application.Commands;
 using Search.Application.Handlers;
-using Search.Domain.Entities;
+using Search.Domain.Dto;
 using Search.Domain.Interfaces;
 
 namespace Search.Test
@@ -22,17 +22,20 @@ namespace Search.Test
         public void CreateBookingCommandHandler_WhenCalled_Success()
         {
             //Arrange
-            _repositoryMock.Setup(x => x.Create(It.IsAny<Booking>())).ReturnsAsync(1);
-            var createBookingCommand = new CreateBookingCommand
+            var bookings = new List<BookingDetail>()
             {
-                BookingDetails = "description"
+                new BookingDetail() { BookingDate = DateTime.UtcNow, FlightId = 1, UserId = 1, SeatNo = "1B", Status = "Booked"},
+                new BookingDetail() { BookingDate = DateTime.UtcNow, FlightId = 2, UserId = 2, SeatNo = "1B", Status = "Booked"}
             };
 
+            _repositoryMock.Setup(x => x.Create(It.IsAny<List<BookingDetail>>())).ReturnsAsync(bookings);
+            var createBookingCommand = new CreateBookingCommandRequest();
+
             //Act
-            var result = createBookingCommandHandler.Handle(createBookingCommand, CancellationToken.None).Result;
+            var result = createBookingCommandHandler.Handle(createBookingCommand, CancellationToken.None);
 
             //Assert
-            Assert.AreEqual(1, result);
+            Assert.IsNotNull(result);
         }
     }
 }

@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Search.Domain.Dto;
-using Search.Domain.Entities;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Search.Infrastructure.Services;
+using System.Threading.Tasks;
 
 namespace Search.API.Controllers
 {
@@ -15,19 +15,22 @@ namespace Search.API.Controllers
             _jwtTokenService = jwtTokenService;
         }
 
-        [HttpGet("/api/v1.0/token")]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(string))]
-        public async Task<IActionResult> Authenticate([FromQuery] string username, [FromQuery] string password)
+        /// <summary>
+        /// Generates JWT token
+        /// </summary>
+        /// <param name="username"> user name </param>
+        /// <param name="password"> password </param>
+        /// <returns></returns>
+
+        [HttpGet("/api/v1.0/token/create")]
+        public async Task<IActionResult> GenerateToken([FromQuery] string username, [FromQuery] string password)
         {
             string token = string.Empty;
             var user = HttpContext.Items["User"] as string;
             if (user == null)
             {
                 token = _jwtTokenService.GenerateToken(username, password);
-               
+
             }
             return Ok(token);
         }

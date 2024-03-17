@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Search.Application.Commands;
 using Search.Application.Queries;
-using Search.Domain.Dto;
-using Search.Domain.Entities;
+using Search.Domain.Requests;
+using System;
+using System.Threading.Tasks;
 
 namespace Search.API.Controllers
 {
@@ -17,17 +19,18 @@ namespace Search.API.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets all booking details from Booking table
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/v1.0/booking")]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Booking>))]
         public async Task<IActionResult> GetBookings()
         {
+            //if user is null than throw Unauthorized error 
             var user = HttpContext.Items["User"] as string;
             if (user == null)
             {
-                return Unauthorized();
+                return Unauthorized("Please provide valid authentication token.");
             }
             else
             {
@@ -36,15 +39,48 @@ namespace Search.API.Controllers
             }
         }
 
-        [HttpPost("/api/v1.0/booking/create")]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ErrorDetails))]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]
-        public async Task<ActionResult> PostBooking([FromBody] CreateBookingCommand createBookingCommand)
+        /// <summary>
+        /// Gets all records which matches the criteria in  Booking table
+        /// </summary>
+        /// <param name="searchBookingRequest"> SearchBookingRequest Object</param>
+        /// <returns></returns>
+        [HttpGet("/api/v1.0/booking/search")]
+        public async Task<IActionResult> SearchBookings([FromQuery] SearchBookingRequest searchBookingRequest)
         {
-            var result = await _mediator.Send(createBookingCommand);
-            return Ok(result);
+            //if user is null than throw Unauthorized error 
+            var user = HttpContext.Items["User"] as string;
+            if (user == null)
+            {
+                return Unauthorized("Please provide valid authentication token.");
+            }
+            else
+            {
+                var result = await _mediator.Send(new SearchBookingQuery { SearchBookingRequest = searchBookingRequest });
+                return Ok(result);
+            }
+        }
+
+        /// <summary>
+        /// Creates booking records in Booking table
+        /// </summary>
+        /// <param name="createBookingCommandRequest"></param>
+        /// <returns></returns>
+        /// <exception cref="UnauthorizedAccessException"></exception>
+
+        [HttpPost("/api/v1.0/booking/create")]
+        public async Task<ActionResult> PostBooking([FromBody] CreateBookingCommandRequest createBookingCommandRequest)
+        {
+            //if user is null than throw Unauthorized error 
+            var user = HttpContext.Items["User"] as string;
+            if (user == null)
+            {
+                throw new UnauthorizedAccessException("Please provide valid authentication token.");
+            }
+            else
+            {
+                await _mediator.Send(createBookingCommandRequest);
+                return Ok("Data Inserted Successfully!");
+            }
         }
     }
 }
